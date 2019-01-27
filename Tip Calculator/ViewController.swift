@@ -34,7 +34,7 @@ class ViewController:UIViewController {
         
     }
     
-    @IBAction func tipUpdate(_ sender: Any) {
+    @IBAction func tipUpdate(_ sender: Any){
         
         calculateTip(Any.self)
         
