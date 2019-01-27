@@ -34,6 +34,9 @@ class ViewController:UIViewController {
         
     }
     
+    @IBAction func tipUpdate(_ sender: Any) {
+        calculateTip(Any.self)
+    }
     @IBAction func calculateTip(_ sender: Any) {
         
         //get bill amount
