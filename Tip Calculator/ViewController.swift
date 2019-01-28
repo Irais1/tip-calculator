@@ -22,7 +22,16 @@ class ViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //self.tipControl.selectedSegmentIndex = defaults.object(forKey: "defaultTip") as! Int
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
+        // This is a good place to retrieve the default tip percentage from UserDefaults
+        // and use it to update the tip amount
+        let defaultTip = UserDefaults.standard;
+        print(defaultTip.integer(forKey: "defaultTip"))
+        tipControl.selectedSegmentIndex = defaultTip.integer(forKey: "defaultTip")
+        calculateTip(true)
         
     }
     
@@ -49,7 +58,6 @@ class ViewController:UIViewController {
         
         //calculate tip and total
         let tipPercent = [0.15,0.18,0.2]
-        //var tip = UserDefaults.standard.double(forKey: "defaultTip")
         
         let tip = bill * tipPercent[tipControl.selectedSegmentIndex]
         let total = bill + tip

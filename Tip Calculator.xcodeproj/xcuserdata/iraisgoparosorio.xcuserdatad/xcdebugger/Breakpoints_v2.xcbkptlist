@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tip Calculator/ViewController.swift"
-            timestampString = "570353977.071283"
+            timestampString = "570388222.753832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68">
+            startingLineNumber = "76"
+            endingLineNumber = "76">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,28 +24,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tip Calculator/ViewController.swift"
-            timestampString = "570353977.071283"
+            timestampString = "570388222.753832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "calculateTip(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tip Calculator/SettingsViewController.swift"
-            timestampString = "570354064.120488"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "defaultTipChanged(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
