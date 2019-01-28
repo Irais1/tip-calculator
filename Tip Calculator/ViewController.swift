@@ -25,11 +25,10 @@ class ViewController:UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("view will appear")
         // This is a good place to retrieve the default tip percentage from UserDefaults
         // and use it to update the tip amount
+        
         let defaultTip = UserDefaults.standard;
-        print(defaultTip.integer(forKey: "defaultTip"))
         tipControl.selectedSegmentIndex = defaultTip.integer(forKey: "defaultTip")
         calculateTip(true)
         

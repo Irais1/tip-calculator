@@ -19,11 +19,11 @@ class SettingsViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("view will appear")
+        
         // This is a good place to retrieve the default tip percentage from UserDefaults
         // and use it to update the tip amount
+        
         let defaultTip = UserDefaults.standard;
-        print(defaultTip.integer(forKey: "defaultTip"))
         defaultTipController.selectedSegmentIndex = defaultTip.integer(forKey: "defaultTip")
         defaultTipPercentage(true)
     }
@@ -33,13 +33,12 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func defaultTipPercentage(_ sender: Any) {
-        print("here")
+        //change default tip value
         let tipPercents = [0,1,2]
         let tip = tipPercents[defaultTipController.selectedSegmentIndex]
         let defaultTip = UserDefaults.standard
         defaultTip.set(tip, forKey: "defaultTip")
         defaultTip.synchronize()
-        print(defaultTip.integer(forKey: "defaultTip"))
     }
    
 
