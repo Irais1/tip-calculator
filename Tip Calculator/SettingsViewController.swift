@@ -10,7 +10,9 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    
     @IBOutlet weak var defaultTipController: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,16 +24,13 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func updateDefaultTip(_ sender: Any) {
-       //change default tip
-        let tipPercent = [0.015,0.18,0.2]
-        
-        let tip = tipPercent[defaultTipController.selectedSegmentIndex]
-        let tipDefault = UserDefaults.standard
-        
-        tipDefault.set(tip, forKey: "TipDefault")
-        tipDefault.synchronize()
+    @IBAction func defaultTipChanged(_ sender: Any) {
+        let tipPercents = [0.15,0.18,0.2]
+        let defaultTip = UserDefaults.standard
+        let tip = tipPercents[defaultTipController.selectedSegmentIndex]
+        defaultTip.set(tip, forKey: "defaultTip")
     }
+   
 
     /*
     // MARK: - Navigation

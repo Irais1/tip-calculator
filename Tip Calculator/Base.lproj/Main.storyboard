@@ -138,8 +138,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6wH-pc-ygV">
-                                <rect key="frame" x="16" y="136" width="343" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eXD-Sn-QAc">
+                                <rect key="frame" x="16" y="113" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="15%"/>
@@ -147,14 +147,16 @@
                                     <segment title="30%"/>
                                 </segments>
                                 <connections>
-                                    <action selector="updateDefaultTip:" destination="OfA-Gv-nvo" eventType="valueChanged" id="aE2-mv-Ifz"/>
+                                    <action selector="defaultTipChanged:" destination="OfA-Gv-nvo" eventType="valueChanged" id="7SQ-Y5-aca"/>
+                                    <action selector="defaultTipController:" destination="OfA-Gv-nvo" eventType="valueChanged" id="8tQ-ia-4tF"/>
+                                    <action selector="updateDefaultTip:" destination="OfA-Gv-nvo" eventType="valueChanged" id="R7I-xK-cCh"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="defaultTipPer" destination="6wH-pc-ygV" id="6sq-vx-MJ6"/>
+                        <outlet property="defaultTipController" destination="eXD-Sn-QAc" id="DeD-eA-gEc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z61-q1-HTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
