@@ -18,9 +18,12 @@ class ViewController:UIViewController {
     
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //self.tipControl.selectedSegmentIndex = defaults.object(forKey: "defaultTip") as! Int
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,6 +49,7 @@ class ViewController:UIViewController {
         
         //calculate tip and total
         let tipPercent = [0.15,0.18,0.2]
+        //var tip = UserDefaults.standard.double(forKey: "defaultTip")
         
         let tip = bill * tipPercent[tipControl.selectedSegmentIndex]
         let total = bill + tip
